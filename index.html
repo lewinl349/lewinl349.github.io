@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<meta charset="utf-8">
+		<title>Home</title>
 	</head>
+
 	<body>
 		<section>
 			<h1>Hello!</h1>
@@ -21,17 +21,5 @@
 				</div>
 			<div>
 		</section>
-
-		<div id="mydiv"></div>
-
-		<script type="text/babel">
-			function Hello() {
-				return <h1>Hello World!</h1>;
-			}
-
-			const container = document.getElementById('mydiv');
-			const root = ReactDOM.createRoot(container);
-			root.render(<Hello />)
-		</script>
 	</body>
 </html>
