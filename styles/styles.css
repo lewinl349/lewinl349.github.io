@@ -1,0 +1,22 @@
+.title {
+    background-color: darkslategray;
+    padding: 12px;
+    margin: 6px;
+    border: 4px solid black;
+    display: flex;
+}
+
+.projects {
+    background-color: grey;
+    padding: 12px;
+    border: 4px solid black;
+    display: flex;
+}
+
+.projects-item {
+    background-color: bisque;
+    border: 4px solid black;
+    height: 24px;
+    flex: 1;
+    margin: 4px;
+}
