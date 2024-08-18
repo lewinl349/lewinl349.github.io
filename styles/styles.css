@@ -44,7 +44,9 @@
 }
 
 .projects p {
-    color: lightgray
+    height: 70px;
+    color: lightgray;
+    text-align: center;
 }
 
 .projects .item-container {
@@ -72,8 +74,11 @@
 }
 
 .projects .button-container {
+    width: 90%;
+    height: 20%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .projects .imageborder {
@@ -90,10 +95,6 @@
     height: 100%;
     display: inline;
     margin: 0 auto;
-}
-
-.projects p {
-    text-align: center;
 }
 
 .projects button {
@@ -134,9 +135,9 @@ footer {
     background-color: rgb(50, 50, 92);
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 20px 40px;
 }
 
 footer p {
@@ -146,4 +147,5 @@ footer p {
 body {
     background-color: rgb(24, 24, 38);
     margin: 0px;
+    position: relative;
 }
