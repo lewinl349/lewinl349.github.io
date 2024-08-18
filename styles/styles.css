@@ -43,6 +43,11 @@
     font-size: 45px;
 }
 
+.projects h2 {
+    color: lightgrey;
+    font-size: 25px;
+}
+
 .projects p {
     height: 70px;
     color: lightgray;
@@ -65,7 +70,7 @@
     align-items: center;
     justify-content: left;
     width: 350px;
-    height: 425px;
+    height: 500px;
     transition: transform 0.7s;
 }
 
@@ -127,6 +132,18 @@
 
 #grey {
     color: rgb(53, 53, 53);
+}
+
+#label-container {
+    display: flex;
+    gap: 5px;
+}
+
+#label {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(53, 53, 107);
+    color: lightgrey;
 }
 
 /* =========================================== */
