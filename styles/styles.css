@@ -1,28 +1,27 @@
 * {
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .title {
     background-color: rgb(53, 53, 107);
     display: flex;
     align-items: center;
-    gap: 40px;
-    padding-left: 5%;
+    padding-left: 5vw;
 }
 
 .title h1 {
     color: white;
-    font-size: 60px;
+    font-size: 5rem;
 }
 
 .title p {
     color: lightgrey;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .title img {
-    width: 65vw;
-    height: auto;
+    width: auto;
+    height: 100vh;
     clip-path: polygon(20% 0, 0 100%, 100% 100%, 100% 0);
     display: block; /* Remove gap below image */
 }
@@ -30,7 +29,7 @@
 /* =========================================== */
 
 .projects {
-    padding: 40px;
+    padding: 80px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,12 +39,12 @@
 
 .projects h1 {
     color: white;
-    font-size: 45px;
+    font-size: 3rem;
 }
 
 .projects h2 {
     color: lightgrey;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .projects p {
