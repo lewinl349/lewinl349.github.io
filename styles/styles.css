@@ -99,7 +99,7 @@
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-}
+} /* Fit image in the border shape */
 
 .projects .imageborder img {
     width: 100%;
@@ -130,6 +130,63 @@
 
 /* =========================================== */
 
+.skills {
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills h1 {
+    color: white;
+    font-size: 2.25rem;
+}
+
+.skills h2 {
+    color: lightgrey;
+    font-size: 1.5rem;
+}
+
+.skills p {
+    height: 15vh;
+    color: lightgray;
+    text-align: center;
+}
+
+.skills .skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.skills .skills-container .skills-grid {
+    background-color: rgb(97, 98, 140);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1.5vw;
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+    gap: 20px;
+}
+
+.skills .skills-container .skills-labels-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.skills .skills-container .skills-labels-container > div {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(53, 53, 107);
+    color: lightgrey;
+}
+
+/* =========================================== */
+
 .icon {
     width: 48px;
     height: 48px;
@@ -150,7 +207,7 @@
     gap: 5px;
 }
 
-#label {
+#label-container > div {
     border-radius: 20px;
     padding: 10px;
     background-color: rgb(53, 53, 107);
