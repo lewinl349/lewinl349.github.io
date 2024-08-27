@@ -108,7 +108,7 @@
     margin: 0 auto;
 }
 
-.projects button {
+.projects #button {
     border: 2px solid white;
     background-color: rgb(97, 98, 140);
     border-radius: 8px;
@@ -119,9 +119,13 @@
     cursor: pointer;
 }
 
-.projects button:hover {
+.projects #button:hover {
     background-color: white;
     color: black;
+}
+
+.projects a {
+    text-decoration: none; /* Remove underline from text */
 }
 
 /* =========================================== */
@@ -172,4 +176,8 @@ body {
     background-color: rgb(24, 24, 38);
     margin: 0px;
     position: relative;
+}
+
+footer a {
+    text-decoration: none; /* Remove underline from text */
 }
