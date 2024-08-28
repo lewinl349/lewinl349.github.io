@@ -164,6 +164,11 @@
     display: grid;
     grid-template-rows: 40px 40px 40px;
     gap: 20px;
+    transition: transform 0.7s;
+}
+
+.skills .skills-container .skills-grid:hover {
+    transform: scale(1.05);
 }
 
 .skills .skills-container .skills-labels-container {
@@ -190,6 +195,18 @@
 
 .icon:hover {
     fill: white;
+}
+
+.language-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.symbol {
+    width: 30px;
+    height: 30px;
+    fill: black;
 }
 
 #grey {
