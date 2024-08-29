@@ -164,6 +164,7 @@
     display: grid;
     grid-template-rows: 40px 40px 40px;
     gap: 20px;
+    justify-content: center;
     transition: transform 0.7s;
 }
 
@@ -174,12 +175,12 @@
 .skills .skills-container .skills-labels-container {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
 }
 
 .skills .skills-container .skills-labels-container > div {
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px;
     background-color: rgb(53, 53, 107);
     color: lightgrey;
 }
@@ -201,6 +202,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 .symbol {
