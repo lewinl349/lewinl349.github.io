@@ -188,9 +188,8 @@
 /* =========================================== */
 
 .contact {
-    padding: 20px 15vw;
+    padding: 5vh 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -198,7 +197,7 @@
     background-color: rgb(53, 53, 107);
     color: white;
     border-radius: 12px;
-    padding: 20px 0;
+    padding: 20px 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,6 +234,26 @@
     cursor: pointer;
     margin: 0;
     padding: 0;
+}
+
+#copy-tooltip {
+    visibility: hidden;
+    width: 100px;
+    background-color: grey;
+    color: black;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px;
+    position: absolute;
+    margin-left: -85px;
+    margin-top: -40px;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+
+#hidden-button:hover #copy-tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* =========================================== */
