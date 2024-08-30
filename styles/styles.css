@@ -187,6 +187,58 @@
 
 /* =========================================== */
 
+.contact {
+    padding: 20px 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textbox {
+    background-color: rgb(53, 53, 107);
+    color: white;
+    border-radius: 12px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.textbox #button {
+    border: 2px solid white;
+    background-color: rgb(53, 53, 107);
+    border-radius: 8px;
+    padding: 8px 32px;
+    font-size: 16px;
+    color: white;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from text */
+}
+
+.textbox #button:hover {
+    background-color: white;
+    color: black;
+}
+
+.textbox .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#hidden-button { /* Display for svg button */
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================== */
+
 .icon {
     width: 48px;
     height: 48px;
@@ -209,6 +261,18 @@
     width: 30px;
     height: 30px;
     fill: black;
+}
+
+/* mail icon */
+.closed-mail {
+    width: 48px;
+    height: 48px;
+    transition-duration: 0.6s;
+    fill: rgba(0, 0, 0, 0);
+}
+
+.closed-mail:hover {
+    fill: white;
 }
 
 #grey {
