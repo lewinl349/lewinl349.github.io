@@ -2,6 +2,12 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
+body {
+    background-color: rgb(24, 24, 38);
+    margin: 0px;
+    position: relative;
+}
+
 .header ul {
     list-style-type: none;
     margin: 0;
@@ -364,10 +370,4 @@ footer {
 
 footer p {
     color: lightgray
-}
-
-body {
-    background-color: rgb(24, 24, 38);
-    margin: 0px;
-    position: relative;
 }
