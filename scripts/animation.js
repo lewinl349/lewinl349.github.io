@@ -11,7 +11,7 @@ function rgb(r, g , b) {
 }
 
 function changeBackground(scrollPos) {
-    let val = scrollPos / 25;
+    let val = scrollPos / 20;
     let body = document.body;
     let color = rgb(24, 24, 38 + val);
 

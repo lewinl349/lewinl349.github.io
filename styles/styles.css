@@ -115,8 +115,7 @@ body {
 
 .projects .item {
     background-color: rgb(97, 98, 140);
-    border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 24px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -205,8 +204,7 @@ body {
 
 .skills .skills-container .skills-grid {
     background-color: rgb(97, 98, 140);
-    border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 24px;
     padding: 1.5vw;
     display: grid;
     grid-template-rows: 40px 40px 40px;
