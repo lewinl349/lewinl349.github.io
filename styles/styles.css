@@ -218,10 +218,6 @@ body {
     left: 5%;
 }
 
-.left-button {
-
-}
-
 .projects .left-button:hover, .right-button:hover {
     background-color: white;
     color: black;
