@@ -29,3 +29,11 @@ function mouseOut() {
     let tooltip = document.getElementById("copy-tooltip");
     tooltip.innerHTML = "Copy Email?";
 }
+
+function leftArrow() {
+    document.getElementById('scroll-gallery').scrollLeft -= 520;
+}
+
+function rightArrow() {
+    document.getElementById('scroll-gallery').scrollLeft += 520;
+}

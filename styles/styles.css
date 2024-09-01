@@ -1,11 +1,27 @@
 * {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: rgb(24, 24, 38);
     margin: 0px;
     position: relative;
+}
+
+.projects ::-webkit-scrollbar {
+    height: 10px;
+}
+
+.projects ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 16px;
+    border: 1px solid white;
+}
+
+.projects ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 16px;
 }
 
 .header ul {
@@ -54,7 +70,9 @@ body {
     background-repeat: no-repeat;
     background-size: 100vw auto;
     background-position: center;
-    height: 100vh;
+    height: 95vh;
+    padding-top: 5vh;
+    overflow: hidden;
 }
 
 .title-container {
@@ -107,10 +125,20 @@ body {
     text-align: center;
 }
 
+.projects .scrolling-container {
+    width: 80vw;
+    height: 600px;
+    border: 2px solid white;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    overflow: auto;
+}
+
 .projects .item-container {
     display: flex;
     flex: auto;
     gap: 2vw;
+    padding: 20px 0px;
 }
 
 .projects .item {
@@ -166,6 +194,37 @@ body {
 
 .projects a {
     text-decoration: none; /* Remove underline from text */
+}
+
+.projects .left-button, .right-button {
+    position: absolute;
+    z-index: 1;
+    margin-top: 250px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: white;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+
+.right-button {
+    right: 5%;
+}
+
+.left-button {
+    left: 5%;
+}
+
+.left-button {
+
+}
+
+.projects .left-button:hover, .right-button:hover {
+    background-color: white;
+    color: black;
 }
 
 /* =========================================== */
@@ -363,9 +422,32 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 40px;
+    padding: 20px 0;
+    width: 100%;
 }
 
 footer p {
     color: lightgray
+}
+
+/* =========================================== */
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        background-size: auto 100vh;
+        width: 200vw;
+        background-position: left;
+    }
+
+    .title-container {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        padding-left: 5vw;
+        padding-right: 15vw;
+        flex-direction: column;
+        background-color: rgba(53, 53, 107, 0.772);
+        clip-path: none;
+    }
 }
