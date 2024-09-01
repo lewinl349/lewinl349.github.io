@@ -68,7 +68,7 @@ body {
 .title {
     background-image: url("../images/McMaster.png");
     background-repeat: no-repeat;
-    background-size: 100vw auto;
+    background-size: cover;
     background-position: center;
     height: 95vh;
     padding-top: 5vh;
@@ -242,6 +242,7 @@ body {
 .skills h2 {
     color: lightgrey;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .skills p {
@@ -252,37 +253,29 @@ body {
 
 .skills .skills-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
-}
-
-.skills .skills-container .skills-grid {
+    flex-direction: column;
     background-color: rgb(97, 98, 140);
+    width: 75vw;
+    max-width: 725px;
     border-radius: 24px;
     padding: 1.5vw;
-    display: grid;
-    grid-template-rows: 40px 40px 40px;
-    gap: 20px;
-    justify-content: center;
+    gap: 15px;
     transition: transform 0.7s;
 }
 
-.skills .skills-container .skills-grid:hover {
+.skills .skills-container:hover {
     transform: scale(1.05);
 }
 
-.skills .skills-container .skills-labels-container {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
 
-.skills .skills-container .skills-labels-container > div {
-    border-radius: 20px;
-    padding: 15px;
-    background-color: rgb(53, 53, 107);
-    color: lightgrey;
+.skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
+    grid-template-rows: repeat(auto, 50px);
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 /* =========================================== */
@@ -375,6 +368,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(53, 53, 107);
+    color: lightgrey;
 }
 
 .symbol {
@@ -428,22 +425,30 @@ footer p {
 
 /* =========================================== */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px), (max-height: 500px) {
     .title {
-        background-size: auto 100vh;
-        width: 200vw;
-        background-position: left;
+        height: 70vh;
     }
-
+    
     .title-container {
-        display: flex;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
+        width: 85%;
+        height: 70vh;
         padding-left: 5vw;
         padding-right: 15vw;
-        flex-direction: column;
-        background-color: rgba(53, 53, 107, 0.772);
         clip-path: none;
+    }
+    
+    .title-container h1 {
+        font-size: 3rem;
+    }
+    
+    .title-container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .textbox {
+        flex-direction: column;
     }
 }
