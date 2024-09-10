@@ -1,6 +1,6 @@
 document.addEventListener("scroll", () => {
     changeBackground(window.scrollY);
-});
+}); // Temp
 
 function rgb(r, g , b) {
     r = Math.floor(r);
