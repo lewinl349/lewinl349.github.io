@@ -78,7 +78,7 @@ body {
 .title-container {
     display: flex;
     justify-content: center;
-    width: 30vw;
+    width: 35vw;
     height: 100vh;
     padding-left: 5vw;
     padding-right: 15vw;
@@ -90,7 +90,6 @@ body {
 .title-container h1 {
     color: white;
     font-size: 4rem;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid white; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     align-self: flex-start; /* Keep h1 same size as the text */
@@ -437,7 +436,7 @@ footer p {
 
 /* =========================================== */
 
-@media only screen and (max-width: 600px), (max-height: 500px) {
+@media only screen and (max-width: 800px), (max-height: 500px) {
     .title {
         height: 70vh;
     }
