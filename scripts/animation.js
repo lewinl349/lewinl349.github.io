@@ -2,6 +2,11 @@ let i = 0;
 let txt = 'Lewin Lin';
 let typingSpeed = 250;
 
+window.copy = copy;
+window.mouseOut = mouseOut;
+window.leftArrow = leftArrow;
+window.rightArrow = rightArrow;
+
 document.addEventListener('DOMContentLoaded', function() {
     typingAni();
 }, false);
