@@ -1,6 +1,22 @@
+let i = 0;
+let txt = 'Lewin Lin';
+let typingSpeed = 250;
+
+document.addEventListener('DOMContentLoaded', function() {
+    typingAni();
+}, false);
+
+function typingAni() {
+  if (i < txt.length) {
+    document.getElementById("title-name").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typingAni, typingSpeed);
+  }
+}
+
 document.addEventListener("scroll", () => {
     changeBackground(window.scrollY);
-}); // Temp
+});
 
 function rgb(r, g , b) {
     r = Math.floor(r);

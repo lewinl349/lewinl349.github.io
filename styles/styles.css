@@ -89,12 +89,24 @@ body {
 
 .title-container h1 {
     color: white;
-    font-size: 4.5rem;
+    font-size: 4rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    align-self: flex-start; /* Keep h1 same size as the text */
+    animation: 
+        blink-caret .75s step-end infinite;
 }
 
 .title-container p {
     color: lightgrey;
     font-size: 1.2rem;
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
 }
 
 /* =========================================== */
