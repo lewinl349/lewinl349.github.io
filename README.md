@@ -6,5 +6,5 @@
 - [ ] Fix Skills Textbox
 
 ### Credits
-Devicon - Icons (Github, LinkedIn)
-Simple Icons - Icons (Gmail, Devpost)
+Devicon - Icons
+Simple Icons - Icons 
