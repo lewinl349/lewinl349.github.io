@@ -32,15 +32,15 @@ function rgb(r, g , b) {
 }
 
 function changeBackground(scrollPos) {
-    let val = scrollPos / 20;
+    let val = scrollPos / 40;
     let body = document.body;
-    let color = rgb(24, 24, 38 + val);
+    let color = rgb(0, 0, 0 + val);
 
     body.style.backgroundColor = color;
 }
 
 function copy() {
-    navigator.clipboard.writeText("lewinl349@gmail.com");
+    navigator.clipboard.writeText("lewinwork349@gmail.com");
 
     let tooltip = document.getElementById("copy-tooltip");
     tooltip.innerHTML = "Copied!";
